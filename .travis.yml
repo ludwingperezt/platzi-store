@@ -13,6 +13,14 @@ git:
 script:
   - yarn build
 
+notifications:
+  email:
+    recipients:
+      - ljperezt@gmail.com
+      - mirage232@gmail.com
+    on_success: always
+    on_failure: always
+
 deploy:
   provider: pages
   skip_cleanup: true
